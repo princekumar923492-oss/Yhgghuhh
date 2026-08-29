@@ -33,10 +33,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8861484552:AAEJaGWQIoLjasUvofucrqx7dCB7J8') # Prefer .env
-if not TOKEN or TOKEN == "8861484552:AAEJaGWQIoLjasUvofucrqx7dCB7J8": # Check if token is missing or placeholder
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8') # Prefer .env
+if not TOKEN or TOKEN == "8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8": # Check if token is missing or placeholder
     # !!! Replace with your actual bot token if not using .env !!!
-    TOKEN = "8861484552:AAEJaGWQIoLjasUvofuPbrqx7dCB7J8" # FALLBACK - Highly recommended to use .env
+    TOKEN = "8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration
 API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-api.lovable.app/api/public/token') # New API (also supports old: https://kr-jwt-old.lovable.app/api/public/token)
@@ -44,12 +44,12 @@ API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-api.lovable.app/api/publ
 
 # Optional: Bot Settings
 MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', 5 * 1024 * 1024))  # 5MB default
-ADMIN_ID = int(os.getenv('ADMIN_ID', 8278814873)) # Default to 0 (disabled) if not set or invalid
+ADMIN_ID = int(os.getenv('ADMIN_ID', 6627454933) # Default to 0 (disabled) if not set or invalid
 # Check and warn if ADMIN_ID is 0 but commands are expected
 if not ADMIN_ID or ADMIN_ID == 0:
     print("WARNING: ADMIN_ID environment variable is not set, invalid, or 0. Admin commands (/vip, /broadcast) and error forwarding will be disabled.")
 MAX_CONCURRENT_REQUESTS = int(os.getenv('MAX_CONCURRENT_REQUESTS', 10)) # Limit concurrent API requests
-ADMIN_CONTACT_LINK = os.getenv('ADMIN_CONTACT_LINK', 'https://t.me/SNxRAJPUTxOP') # Default admin contact link
+ADMIN_CONTACT_LINK = os.getenv('ADMIN_CONTACT_LINK', 'https://t.me/PRINCE_H4X') # Default admin contact link
 AUTO_PROCESS_CHECK_INTERVAL = int(os.getenv('AUTO_PROCESS_CHECK_INTERVAL', 60)) # Seconds between scheduler checks (min 60 recommended)
 
 
