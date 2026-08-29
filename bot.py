@@ -33,13 +33,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', "8850444640:AAFwhd2STWHbbVzLt0a0PKHd3pKte5MfArQ") # Prefer .env
-if not TOKEN or TOKEN == "8850444640:AAFwhd2STWHbbVzLt0a0PKHd3pKte5MfArQ": # Check if token is missing or placeholder
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', "8850444640:AAHt6Qw6ckOSz_jBnFJ6yp340aFhvqT2154") # Prefer .env
+if not TOKEN or TOKEN == "8850444640:AAHt6Qw6ckOSz_jBnFJ6yp340aFhvqT2154": # Check if token is missing or placeholder
     # !!! Replace with your actual bot token if not using .env !!!
-    TOKEN = "8850444640:AAFwhd2STWHbbVzLt0a0PKHd3pKte5MfArQ" # FALLBACK - Highly recommended to use .env
+    TOKEN = "8850444640:AAHt6Qw6ckOSz_jBnFJ6yp340aFhvqT2154" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration
-API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-old.lovable.app/api/public/token')#ƊƠƝƬ ƇӇƛƝƓЄ ƠƬӇЄƦƜƖƧЄ ЄƦƦƠƦ
+API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-api.lovable.app/api/public/token')#ƊƠƝƬ ƇӇƛƝƓЄ ƠƬӇЄƦƜƖƧЄ ЄƦƦƠƦ
 # API_KEY = os.getenv('JWT_API_KEY', 'uditXdev')
 
 # Optional: Bot Settings
