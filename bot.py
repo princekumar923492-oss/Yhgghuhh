@@ -33,10 +33,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8') # Prefer .env
-if not TOKEN or TOKEN == "8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8": # Check if token is missing or placeholder
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk') # Prefer .env
+if not TOKEN or TOKEN == "8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk": # Check if token is missing or placeholder
     # !!! Replace with your actual bot token if not using .env !!!
-    TOKEN = "8850444640:AAHCmYsi2z6OlNoW3p6LSIOOzRZU7HCiEs8" # FALLBACK - Highly recommended to use .env
+    TOKEN = "8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration
 API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-api.lovable.app/api/public/token') # New API (also supports old: https://kr-jwt-old.lovable.app/api/public/token)
