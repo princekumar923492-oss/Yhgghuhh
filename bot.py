@@ -33,18 +33,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk') # Prefer .env
-if not TOKEN or TOKEN == "8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk": # Check if token is missing or placeholder
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8850444640:AAG1Y6tplfHO0-gZMrk4NdEplFB3q77fSUw') # Prefer .env
+if not TOKEN or TOKEN == "8850444640:AAG1Y6tplfHO0-gZMrk4NdEplFB3q77fSUw": # Check if token is missing or placeholder
     # !!! Replace with your actual bot token if not using .env !!!
-    TOKEN = "8850444640:AAFO3K0GfMY654RkOweac9wfK0Y72GNz7vk" # FALLBACK - Highly recommended to use .env
+    TOKEN = "8850444640:AAG1Y6tplfHO0-gZMrk4NdEplFB3q77fSUw" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration
-API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-api.lovable.app/api/public/token') # New API (also supports old: https://kr-jwt-old.lovable.app/api/public/token)
+API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-old.lovable.app/api/public/token')#ƊƠƝƬ ƇӇƛƝƓЄ ƠƬӇЄƦƜƖƧЄ ЄƦƦƠƦ
 # API_KEY = os.getenv('JWT_API_KEY', 'uditXdev')
 
 # Optional: Bot Settings
 MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', 5 * 1024 * 1024))  # 5MB default
-ADMIN_ID = int(os.getenv('ADMIN_ID', 6627454933)) # Default to 0 (disabled) if not set or invalid
+ADMIN_ID = int(os.getenv('ADMIN_ID', 6627454933) # Default to 0 (disabled) if not set or invalid
 # Check and warn if ADMIN_ID is 0 but commands are expected
 if not ADMIN_ID or ADMIN_ID == 0:
     print("WARNING: ADMIN_ID environment variable is not set, invalid, or 0. Admin commands (/vip, /broadcast) and error forwarding will be disabled.")
@@ -558,7 +558,7 @@ async def process_account(session: aiohttp.ClientSession, account: dict, semapho
                         if isinstance(result, dict) and result.get('token'):
                             token = result['token']
                             # Region is optional but useful
-                            region = result.get('region') or result.get('lockRegion') or result.get('notiRegion') # New API returns 'region'; old API returns 'lockRegion'/'notiRegion'
+                            region = result.get('lockRegion') or result.get('notiRegion') # Can be None
                             logger.info(f"Success: Token received for UID: {uid_str} (Region: {region})")
                             # Return original account info for working list
                             return token, region, original_account_info, None, None
