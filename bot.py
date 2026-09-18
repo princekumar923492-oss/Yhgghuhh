@@ -44,7 +44,7 @@ API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-jwt-old.lovable.app/api/publ
 
 # Optional: Bot Settings
 MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', 5 * 1024 * 1024))  # 5MB default
-ADMIN_ID = int(os.getenv('ADMIN_ID', 6627454933) # Default to 0 (disabled) if not set or invalid
+ADMIN_ID = int(os.getenv('ADMIN_ID', 6627454933)) # Default to 0 (disabled) if not set or invalid
 # Check and warn if ADMIN_ID is 0 but commands are expected
 if not ADMIN_ID or ADMIN_ID == 0:
     print("WARNING: ADMIN_ID environment variable is not set, invalid, or 0. Admin commands (/vip, /broadcast) and error forwarding will be disabled.")
