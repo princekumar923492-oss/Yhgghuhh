@@ -43,9 +43,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '9022251823:AAGLKE5FK8-KtQRQU8lBtjzoaAXGkrF6EXE')
-if not TOKEN or TOKEN == "9022251823:AAGLKE5FK8-KtQRQU8lBtjzoaAXGkrF6EXE":
-    TOKEN = "9022251823:AAGLKE5FK8-KtQRQU8lBtjzoaAXGkrF6EXE" # FALLBACK - Highly recommended to use .env
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '9022251823:AAEcxqTbeJFgGzMChAdq-LlOymlH1DQqvZU')
+if not TOKEN or TOKEN == "9022251823:AAEcxqTbeJFgGzMChAdq-LlOymlH1DQqvZU":
+    TOKEN = "9022251823:AAEcxqTbeJFgGzMChAdq-LlOymlH1DQqvZU" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration — Updated to new fast API
 API_BASE_URL = os.getenv('JWT_API_URL', 'https://fast-ob55-jwt.lovable.app/api/public/token')
