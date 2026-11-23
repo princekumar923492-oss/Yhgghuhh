@@ -43,9 +43,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Essential: Get Bot Token
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '9006838872:AAHwEzS9_iW4mEHrjlvekuTkxO1m_GVWT8E')
-if not TOKEN or TOKEN == "9006838872:AAHwEzS9_iW4mEHrjlvekuTkxO1m_GVWT8E":
-    TOKEN = "9006838872:AAHwEzS9_iW4mEHrjlvekuTkxO1m_GVWT8E" # FALLBACK - Highly recommended to use .env
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '9006838872:AAFM78snMN9L3RwcS8RJQ6nho2ra1xsULNA')
+if not TOKEN or TOKEN == "9006838872:AAFM78snMN9L3RwcS8RJQ6nho2ra1xsULNA":
+    TOKEN = "9006838872:AAFM78snMN9L3RwcS8RJQ6nho2ra1xsULNA" # FALLBACK - Highly recommended to use .env
 
 # Optional: API Configuration — UID/Password API updated to kr-uidpass-to-jwt
 API_BASE_URL = os.getenv('JWT_API_URL', 'https://kr-uidpass-to-jwt.vercel.app/token')
